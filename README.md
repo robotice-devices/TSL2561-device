@@ -1,6 +1,6 @@
 
 ===============================
-TSL2561 - I2C luminosity sensor
+TSL2561 - I2C Luminosity Sensor
 ===============================
 
 Requires: Adafruit_I2C

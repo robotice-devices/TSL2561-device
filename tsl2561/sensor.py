@@ -4,7 +4,7 @@ import logging
 
 from TSL2561 import *
 
-LOG = logging.getLogger("robotice.sensor.tsl2561")
+logger = logging.getLogger("robotice.sensor.tsl2561")
 
 def get_data(sensor):
     """
