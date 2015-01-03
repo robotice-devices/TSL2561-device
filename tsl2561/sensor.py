@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 
+import logging
+
 from TSL2561 import *
+
+LOG = logging.getLogger("robotice.sensor.tsl2561")
 
 def get_data(sensor):
     """
@@ -9,7 +13,7 @@ def get_data(sensor):
 
     name = sensor.get('name')
     bus = 1
-    
+
     tsl = TSL2561() 
      
     if tsl.foundSensor(): 
@@ -33,7 +37,6 @@ def get_data(sensor):
         print("Lux: %d" % tsl.calculateLux(full, infrared) )
     else:
         print("No sensor?")
-
 
     luminosity = 0
  
